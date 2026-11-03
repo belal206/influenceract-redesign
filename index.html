@@ -265,8 +265,9 @@
   .network .card:nth-child(2) strong { color: var(--red); }
   .network .card:nth-child(3) strong { color: #b246d0; }
   .network span { color: var(--muted); }
-  .tbd { font-size: 15px !important; letter-spacing: 0 !important; line-height: 1.3 !important; font-weight: 600 !important; }
-  .network strong.tbd { font-size: 20px !important; margin-bottom: 6px; }
+  .story-solo { align-items: center; gap: 56px; }
+  .story-solo .story-img { min-height: 560px; }
+  .story-solo .sec-head { margin-bottom: 0; }
   @media (max-width: 860px) {
     .story, .network { grid-template-columns: 1fr; }
     .story-img { min-height: 340px; }
@@ -589,28 +590,15 @@
 <!-- STORIES -->
 <section id="stories">
   <div class="wrap">
-    <div class="sec-head rv">
-      <div>
-        <div class="kicker"><b>03</b> / Stories from the network</div>
-        <h2>Creators bring every story <em class="grad">to life.</em></h2>
-      </div>
-    </div>
-    <div class="story rv">
+    <div class="story story-solo rv">
       <div class="story-img"><img src="assets/fashion-lifestyle.jpg" alt="Fashion and lifestyle creator" style="object-position:50% 40%" onerror="this.remove()"><span class="badge">FASHION &amp; LIFESTYLE</span></div>
-      <div class="card tilt">
-        <blockquote>[Insert an approved creator testimonial about their experience with the platform.]</blockquote>
-        <div class="who"><div class="avatar">✦</div><div><strong>[Approved creator name]</strong><small>[handle] · [platform]</small></div></div>
-        <div class="mini-stats">
-          <div><strong class="tbd">[Verified follower count]</strong><span>followers</span></div>
-          <div><strong class="tbd">[Approved campaign count]</strong><span>brand campaigns</span></div>
-          <div><strong class="tbd">[Verified earnings, if approved]</strong><span>earned</span></div>
+      <div class="sec-head">
+        <div>
+          <div class="kicker"><b>03</b> / Stories from the network</div>
+          <h2>Creators bring every story <em class="grad">to life.</em></h2>
+          <a href="#join" class="btn magnetic" style="margin-top:36px">Join the creator network <span class="arr">→</span></a>
         </div>
       </div>
-    </div>
-    <div class="network">
-      <div class="card tilt rv"><strong class="tbd">[Verified creator network count]</strong><span>creators onboarded</span></div>
-      <div class="card tilt rv"><strong class="tbd">[Verified completed campaign count]</strong><span>campaigns completed</span></div>
-      <div class="card tilt rv"><strong class="tbd">[Verified brand partnership count]</strong><span>brand partnerships</span></div>
     </div>
   </div>
 </section>
